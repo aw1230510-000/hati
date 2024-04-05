@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>八幡山公園 | お問い合わせ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/information.css">
+</head>
+<body>
+    <div id="all">
+        <header>
+            <div id="flex">
+                <h1><a href="index.html"><img src="img(仮)/img/logo.gif"></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="about.html"><img src="img(仮)/公園アイコン.png"><br>公園について</a></li>
+                        <li><a href="shoukai.html"><img src="img(仮)/タワーのピクトグラム.png"><br>施設紹介</a></li>
+                        <li><a href="access.html"><img src="img(仮)/地図アイコン.png"><br>アクセス</a></li>
+                        <li><a href="information.html"><img src="img(仮)/連絡アイコン.png"><br>お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <h1>お問い合わせ</h1>
+        <div id="form">
+            <!-- 件名 -->
+            <label><h2>件名<br><input id="title" name="title" type="text" placeholder="ex)施設利用について"></h2></label>
+                <p id="no_title"></p>
+
+            <!-- 名前 -->
+            <label><h2>お名前<br><input id="name" name="name" type="text" placeholder=""></h2></label>
+                <p id="no_name"></p>
+
+            <!-- メール -->
+            <label><h2>メールアドレス<br><input id="email" name="email" type="email"></h2></label>
+                <p id="no_mail"></p>
+
+            <!-- 電話番号 -->
+            <label><h2>電話番号<br><input id="tel" name="tel" type="tel" placeholder="ハイフンありで入力"></h2></label>
+                <p id="no_tel"></p>
+
+            <!-- 内容　テキストエリア -->
+            <label><h2>内容<br><textarea id="cont" name="cont"></textarea></h2></label>
+                <p id="no_cont"></p>
+
+            <!-- チェックボックス欄 -->
+            <label><h2><input id="checkbox" name="checkbox" type="checkbox">　チェックを入れて送信してください。</h2></label>
+                <p id="no_check"></p>
+            
+            <!-- 送信ボタン -->
+            <label><p><input id="button" name="button" type="submit" value="送信">　<span id="submit_af"></span></p></label>
+        </div>
+
+        <footer>
+            <p>〒320-0027<br>
+                宇都宮市塙田5-1-1<br>
+                電話：028-624-0642<br>
+                ＦＡＸ：028-622-6002
+            </p>
+
+        </footer>
+    </div>
+    <script src="js/information.js">
+        // document.getElementById("button").addEventListener("click",formChange);
+
+        // function formChange(){
+        //     let err = 0;
+
+        //     let check = document.getElementById("checkbox").checked;
+        //     if(check == true){
+        //         document.getElementById("no_check").textContent = ""; //チェックボックスにチェックが入っているとき
+
+        //         // 件名
+        //         let title = document.getElementById("title").value;
+        //         if(title == "" || title == null){
+        //             document.getElementById("no_title").textContent = "件名を入力してください。";
+        //             err = 1;
+        //         }else{
+        //             document.getElementById("no_title").textContent = "";
+        //         }
+                
+        //         // 名前
+        //         let name = document.getElementById("name").value;
+        //         if(name == "" || name == null){
+        //             document.getElementById("no_name").textContent = "名前を入力してください。";
+        //             err = 2;
+        //         }else{
+        //             document.getElementById("no_name").textContent = "";
+        //         }
+
+        //         // メール
+        //         let mail = document.getElementById("email").value;
+        //         let mail_match = mail.match(/^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]+.[A-Za-z0-9]+$/); //aaaaaa00@kkkkk.jp
+        //         if(mail == "" || mail_match == null){
+        //             document.getElementById("no_mail").textContent = "メールアドレスを入力してください。";
+        //             err = 3;
+        //         }else{
+        //             document.getElementById("no_mail").textContent = "";
+        //         }
+
+        //         // 電話
+        //         let tel = document.getElementById("tel").value;
+        //         let tel_match = tel.match(/^0\d{1,3}-\d{2,4}-\d{3,4}$/); //０から始まり９桁または１０桁の数字、ハイフンあり
+        //         if(tel == "" || tel_match == null){
+        //             document.getElementById("no_tel").textContent = "電話番号を入力してください。";
+        //             err = 4;
+        //         }else{
+        //             document.getElementById("no_tel").textContent = "";
+        //         }
+
+        //         // 内容
+        //         let cont = document.getElementById("cont").value;
+        //         if(cont == "" || cont == null){
+        //             document.getElementById("no_cont").textContent = "内容を入力してください。";
+        //             err = 5;
+        //         }else{
+        //             document.getElementById("no_cont").textContent = "";
+        //         }
+
+        //         if(err==0){
+        //             document.getElementById("submit_af").textContent="送信されました。";
+        //         }
+
+        //     }else{
+        //         document.getElementById("no_check").textContent = "チェックを確認してください。";//チェックされていないとき
+        //     }
+            
+        // }
+    </script>
+</body>

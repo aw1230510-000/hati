@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+
+body{
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    color: rgb(75, 75, 75);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Zen Maru Gothic", serif;
+    font-style: normal;
+    margin: 0;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav ul li{
+    padding-right: 10px;
+
+}
+#osi ul{
+    list-style-type: none;
+}
+label p{
+    font-size: 110%;
+}
+
+/* header内のnav要素 */
+a{
+    text-decoration: none;
+    color: #0F5474;
+}
+#all h1 img{
+    width:130px;
+    height: auto;
+}
+#flex{
+    display: flex;
+    justify-content: space-between;
+    background-attachment: fixed;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav ul li{
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    text-align: center;
+    padding: 10px;
+}
+nav ul li img{
+    width: 30px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+#flex h1{
+    text-align: left;
+}
+#form p{
+    color: tomato;
+}
+
+/* 問い合わせフォームの大きさ */
+input[type="text"]{
+    width: 400px;
+    height: 30px;
+}
+input[type="email"]{
+    width: 400px;
+    height: 30px;
+}
+input[type="tel"]{
+    width: 400px;
+    height: 30px;
+}
+textarea{
+    width: 400px;
+    height: 100px;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+input[type="submit"]{
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 110%;
+    font-family: "Zen Maru Gothic", serif;
+    font-style: normal;
+    border: solid 10px #0F5474;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+#form{
+    margin: 0 auto;
+    width: fit-content;
+}
+/* footer */
+footer{
+    text-align: center;
+    background-color: #0F5474;
+    color: aliceblue;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* メディア */
+@media screen and (max-width:768px) {
+    #flex{
+        display: block;
+        background-attachment: fixed;
+    }
+    nav ul{
+      list-style-type: none;
+      display: block;
+      margin: 10px auto;
+      width: fit-content;
+    }
+    nav ul li{
+      padding-right: 10px;
+      /* text-align: center; */
+      padding: 10px;
+      border-bottom: 1px solid rgb(75, 75, 75);
+      margin: 0 auto;
+    }
+}
