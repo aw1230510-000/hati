@@ -1,0 +1,142 @@
+@charset 'utf-8';
+
+
+body{
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    color: rgb(75, 75, 75);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Zen Maru Gothic", serif;
+    font-style: normal;
+}
+h2{
+    text-align: center;
+}
+/* header内のnav要素 */
+a{
+    text-decoration: none;
+    color: #0F5474;
+}
+#flex{
+    display: flex;
+    justify-content: space-between;
+    background-attachment: fixed;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav ul li{
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    text-align: center;
+    padding: 10px;
+}
+nav ul li img{
+    width: 30px;
+    margin: 0 auto;
+}
+#all h1 img{
+    width:130px;
+    height: auto;
+}
+
+
+.width{
+    font-weight: bold;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav ul li{
+    padding-right: 10px;
+}
+#osi ul{
+    list-style-type: none;
+}
+#sub{
+    width: 700px;
+    margin: 0 auto;
+}
+.title{
+    margin: 0 30px;
+}
+.title h2{
+    color: #0F5474;
+}
+.content{
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.content p{
+    padding: 10px;
+}
+.content img{
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.border{
+    border-top: 1px solid rgb(75, 75, 75);
+}
+footer{
+    text-align: center;
+    background-color: #0F5474;
+    color: aliceblue;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* メディア */
+@media screen and (max-width:768px) {
+    #index{
+      margin: 0 10px;
+      width:fit-content;
+      background-color: aliceblue;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    #flex{
+      display: block;
+      background-attachment: fixed;
+  } 
+  nav ul{
+    list-style-type: none;
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+  }
+  nav ul li{
+    padding-right: 10px;
+    /* text-align: center; */
+    padding: 10px;
+    border-bottom: 1px solid rgb(75, 75, 75);
+    margin: 0 auto;
+  }
+
+  .content{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 50px;
+    display: block;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+#sub{
+    width: fit-content;
+    margin: 0 auto;
+}
+  footer{
+    text-align: center;
+    background-color: #0F5474;
+    color: aliceblue;
+}
+  }
